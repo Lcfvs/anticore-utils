@@ -1,5 +1,5 @@
 import log from 'anticore-apis/console/log'
-import curry from 'anticore-core/function/curry'
+import bind from 'anticore-core/function/bind'
 
 function callback (name, log) {
   log('Not implemented : %s', name)
@@ -7,6 +7,6 @@ function callback (name, log) {
   return this
 }
 
-export default function notImplemented (name, logger) {
-  return curry(callback, name, logger || log)
+export default function notImplemented (context, name, logger) {
+  return bind(callback, context, name, logger || log)
 }
