@@ -1,6 +1,6 @@
 {
   "name": "anticore-utils",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A module to pick some utils as simple static functions",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Lcfvs/anticore-utils#readme",
   "dependencies": {
-    "anticore-apis": "0.0.5",
-    "anticore-core": "0.0.7"
+    "anticore-apis": "0.0.6",
+    "anticore-core": "0.0.13"
   }
 }
