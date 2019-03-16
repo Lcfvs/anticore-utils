@@ -8,10 +8,8 @@ export default function pool (members = empty()) {
   const entries = []
 
   return empty({
-    push (...values) {
-      push(entries, ...values)
-
-      return this
+    clone () {
+      return pool(this).push(...entries)
     },
     current () {
       return current
@@ -21,6 +19,11 @@ export default function pool (members = empty()) {
     },
     next () {
       return (current = shift(entries))
+    },
+    push (...values) {
+      push(entries, ...values)
+
+      return this
     },
     values () {
       return slice(entries, 0)
