@@ -3,7 +3,7 @@ import shift from 'anticore-core/Array/shift'
 import slice from 'anticore-core/Array/slice'
 import empty from 'anticore-core/Object/empty'
 
-export default function pool (members = empty()) {
+export default function pool (...extensions) {
   let current
   const entries = []
 
@@ -28,5 +28,5 @@ export default function pool (members = empty()) {
     values () {
       return slice(entries, 0)
     }
-  }, members)
+  }, ...extensions)
 }
