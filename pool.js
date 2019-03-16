@@ -7,7 +7,7 @@ export default function pool (members = empty()) {
   const entries = []
 
   return empty({
-    add (...values) {
+    push (...values) {
       push(entries, ...values)
 
       return this
