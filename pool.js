@@ -1,5 +1,6 @@
 import push from 'anticore-core/Array/push'
 import shift from 'anticore-core/Array/shift'
+import slice from 'anticore-core/Array/slice'
 import empty from 'anticore-core/Object/empty'
 
 export default function pool (members = empty()) {
@@ -20,6 +21,9 @@ export default function pool (members = empty()) {
     },
     next () {
       return (current = shift(entries))
+    },
+    values () {
+      return slice(entries, 0)
     }
   }, members)
 }
