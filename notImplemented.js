@@ -1,4 +1,4 @@
-import log from 'anticore-apis/console/log'
+import log from './console/log'
 import curry from 'anticore-core/function/curry'
 
 function callback (name, log) {
