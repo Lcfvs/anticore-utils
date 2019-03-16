@@ -8,8 +8,8 @@ export default function pool (...extensions) {
   const entries = []
 
   return empty({
-    clone () {
-      return pool(this).push(...entries)
+    clone (...extensions) {
+      return pool(this, ...extensions).push(...entries)
     },
     current () {
       return current
