@@ -1,6 +1,6 @@
-import indexOf from 'anticore-core/array/indexOf'
-import shift from 'anticore-core/array/shift'
-import curry from 'anticore-core/function/curry'
+import indexOf from 'anticore-core/Array/indexOf'
+import shift from 'anticore-core/Array/shift'
+import curry from 'anticore-core/Function/curry'
 
 function find (invalids, ...values) {
   const value = shift(values)

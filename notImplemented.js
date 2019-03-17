@@ -1,5 +1,5 @@
 import log from './console/log'
-import curry from 'anticore-core/function/curry'
+import curry from 'anticore-core/Function/curry'
 
 function callback (name, log) {
   log('Not implemented : %s', name)

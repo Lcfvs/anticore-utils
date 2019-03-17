@@ -1,4 +1,4 @@
-import call from 'anticore-core/function/call'
+import call from 'anticore-core/Function/call'
 import console from './'
 
 const method = console.trace
