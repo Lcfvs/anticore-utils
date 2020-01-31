@@ -1,7 +1,7 @@
-import push from 'anticore-core/Array/push'
-import shift from 'anticore-core/Array/shift'
-import slice from 'anticore-core/Array/slice'
-import empty from 'anticore-core/Object/empty'
+import push from 'anticore-core/Array/push.js'
+import shift from 'anticore-core/Array/shift.js'
+import slice from 'anticore-core/Array/slice.js'
+import empty from 'anticore-core/Object/empty.js'
 
 export default function pool (...extensions) {
   let current
